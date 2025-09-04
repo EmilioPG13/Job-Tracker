@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@theme {
+    --color-primary: #4A90E2;
+    --color-background: #F4F7FA;
+    --color-card: #C1DFF0;
+    --color-header: #B3D7EA;
+    --color-text-dark: #333333;
+    --color-text-medium: #555555;
+    --color-status-applied: #4A90E2;
+    --color-status-interviewing: #50E3C2;
+    --color-status-offer: #F5A623;
+    --color-status-rejected: #CC3E3E;
+
+    /* Set Poppins as the default font family */
+    --font-family-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-background text-text-dark font-sans;
+    }
+
+    input[type="checkbox"]:checked::after {
+        content: "✓";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
