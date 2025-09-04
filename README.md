@@ -71,22 +71,22 @@ The Job Application Tracker is a web-based tool designed to help users organize 
 Below are wireframes showcasing the main design blueprints for the Job Application Tracker application:
 
 ### Landing Page
-![Landing Page](./assets/Landing%20Page.png)
+![Landing Page](./assets/landing-page.png)
 
 ### Login Page
-![Login Page](./assets/Login.png)
+![Login Page](./assets/login.png)
 
 ### Sign Up Page
-![Sign Up Page](./assets/Sign%20in.png)
+![Sign Up Page](./assets/sign-up.png)
 
-### Dashboard (My Applications)
-![Dashboard](./assets/Main%20Page%20(Column).png)
+### Dashboard (Column view)
+![Dashboard](./assets/dashboard-column.png)
+
+### Dashboard (Grid view)
+![Application Cards](./assets/dashboard-grid.png)
 
 ### Add New Application Modal
-![Add New Application](./assets/Add,%20Edit%20modal.png)
-
-### Application Cards with Notes and Status
-![Application Cards](./assets/Main%20Page%20(Grid).png)
+![Add New Application](./assets/add-application-modal.png)
 
 ---
 These wireframes illustrate the user flow and core UI components, including authentication, application management, and dashboard features. They serve as a visual reference for the application's look and feel.
