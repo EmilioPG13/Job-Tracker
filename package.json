@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+    "scripts": {
     "dev": "vite",
     "start": "vite preview",
-    "build": "NODE_OPTIONS='--max-old-space-size=4096' vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
@@ -14,7 +14,7 @@
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest --watch",
-    "postinstall": "npm rebuild esbuild && cd node_modules/vite && npm install esbuild"
+    "postinstall": "npm rebuild esbuild"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
