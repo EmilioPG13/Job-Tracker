@@ -6,5 +6,11 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss()
-  ]
+  ],
+  build: {
+    rollupOptions: {
+      // This tells Rollup not to use the native module
+      context: 'globalThis',
+    }
+  }
 })
