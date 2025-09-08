@@ -14,7 +14,6 @@
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest --watch",
-    "postinstall": "npm rebuild esbuild"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
