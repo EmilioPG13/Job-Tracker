@@ -3,19 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-                "scripts": {
-          "dev": "vite",
-          "start": "vite preview",
-          "build": "vite build",
-          "lint": "eslint .",
-          "preview": "vite preview",
-          "test": "vitest",
-          "test:ui": "vitest --ui",
-          "test:run": "vitest run",
-          "test:coverage": "vitest run --coverage",
-          "test:watch": "vitest --watch",
-          "postinstall": "mkdir -p node_modules/@rollup && npm install --no-save @rollup/rollup-linux-x64-gnu && npm install --no-save lightningcss-linux-x64-gnu"
-        },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite preview",
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest --watch",
+    "postinstall": "npm rebuild esbuild && cd node_modules/vite && npm install esbuild"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "react": "^19.1.1",
