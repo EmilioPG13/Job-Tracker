@@ -1,7 +1,9 @@
 services:
   - type: web
-    name: job-tracker
+    name: job-tracker-1
     env: static
     buildCommand: ""
-    publishDir: dist
+    staticPublishPath: ./dist
+    staticCheckout: true
+    route: "/"
     branch: static-deploy
