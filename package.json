@@ -5,15 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite preview",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "start": "vite preview",
+    "lint": "eslint .",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "test:watch": "vitest --watch"
+    "test:watch": "vitest --watch",
+    "postinstall": "npm i --no-save @rollup/rollup-linux-x64-gnu@4.24.0 || true"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.24.0"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
