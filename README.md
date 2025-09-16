@@ -1,135 +1,210 @@
 
-# Job Application Tracker
+# Job Tracker
 
-## Product Overview
-The Job Application Tracker is a web-based tool designed to help users organize and manage their job applications efficiently. The MVP focuses on providing essential features to track applications from initial interest to final decision.
+A modern, full-stack job application tracking system built with React 19 and Node.js. Track your job applications, manage interviews, and stay organized throughout your job search journey.
 
-## MVP Features
-### 1. User Authentication
-- **User Registration:** Sign up with email and password.
-- **User Login:** Sign in to access private data.
-- **Protected Routes:** Dashboard and application data are only accessible to logged-in users.
+## 🚀 Live Demo
 
-### 2. Application Management
-- **Create Application:** Add new applications with fields for company name, job title, status (Applied, Interviewing, Offer, Rejected), date applied, and notes.
-- **Read Applications:** View all applications in a dashboard as a list or cards.
-- **Update Application:** Edit existing applications, especially status changes.
-- **Delete Application:** Remove applications permanently.
-- **Create Notes:** Add concise notes to each application.
+- **Frontend**: [Job Tracker Frontend](https://job-tracker-frontend-j2sw.onrender.com)
+- **Backend API**: [Job Tracker API](https://job-tracker-server-7ies.onrender.com)
 
-## Post-MVP / Future Features
-- **Kanban Board View:** Visual dashboard with drag-and-drop status columns.
-- **Advanced Filtering & Searching:** Filter by status or search by company name.
-- **Detailed Application View:** Add detailed notes, contacts, or job descriptions.
-- **Document Uploads:** Attach resumes or cover letters to applications.
-- **Follow-up Reminders:** Set reminders to follow up on applications.
-- **Data Visualization:** Charts showing breakdowns by status.
+## ✨ Features
 
-## Technology Stack
-| Category   | Technology     | Purpose in Project                                      |
-|------------|----------------|---------------------------------------------------------|
-| Frontend   | React.js       | Build interactive UI and dashboard                      |
-| Backend    | Node.js        | Server-side JavaScript runtime                          |
-|            | Express.js     | Web server and API framework                            |
-| Database   | PostgreSQL     | Store user and application data                         |
-| Deployment | Render         | Host the live web application                           |
-| Tools      | Git / GitHub   | Version control and code hosting                        |
+### Core Features
+- **Application Management**: Add, edit, and track job applications with company details, status, and notes
+- **Grid & List Views**: Switch between different viewing modes for better organization
+- **Search & Filter**: Quickly find applications by company name or status
+- **User Authentication**: Secure login and registration system
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Modern UI**: Clean interface built with Tailwind CSS 4
 
-## Packages Used
+### Application Tracking
+- **Status Management**: Track applications through Applied, Interviewing, Offer, and Rejected stages
+- **Company Details**: Store company name, job title, application date, and custom notes
+- **CRUD Operations**: Full create, read, update, and delete functionality
+- **Protected Routes**: Secure access to your personal data
 
+## 🛠 Tech Stack
 
 ### Frontend
-- **react, react-dom**: Core React library for building UI and rendering components.
-- **react-redux**: State management using Redux in React.
-- **react-router-dom**: Routing and navigation for React applications.
-- **tailwindcss, @tailwindcss/vite**: Utility-first CSS framework for styling and Vite integration. Tailwind is customized via `tailwind.config.js` to match the application's color palette, fonts, and border radii.
-- **@vitejs/plugin-react, vite**: Vite build tool and React plugin for fast development and HMR.
-- **eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh**: Linting and code quality tools for React projects.
-- **@testing-library/react, @testing-library/jest-dom, @testing-library/user-event**: Testing utilities for React components and user interactions.
-- **vitest**: Unit and integration testing framework for Vite projects.
-- **msw, axios-mock-adapter**: Mocking API requests for testing.
+- **React 19** - Latest React with concurrent features
+- **Vite 7** - Lightning-fast build tool and dev server
+- **Redux Toolkit** - State management with modern Redux patterns
+- **React Router** - Client-side routing and navigation
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Vitest** - Unit and integration testing
 
 ### Backend
-- **express**: Web server and API framework for Node.js.
-- **pg**: PostgreSQL client for Node.js.
-- **bcryptjs**: Password hashing for secure authentication.
-- **jsonwebtoken**: Handling JWT-based authentication.
-- **cors**: Enable Cross-Origin Resource Sharing.
-- **dotenv**: Load environment variables from `.env` files.
-- **helmet**: Security middleware for HTTP headers.
-- **express-rate-limit**: Rate limiting middleware to prevent abuse.
-- **express-validator**: Validation and sanitization of request data.
-- **xss, express-mongo-sanitize**: Protection against XSS and NoSQL injection attacks.
-- **nodemon**: Development tool for automatically restarting the server on changes.
-- **jest, @jest/globals, supertest**: Testing framework and utilities for backend code and API endpoints.
-- **cross-env**: Set environment variables across platforms for scripts.
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web application framework
+- **PostgreSQL** - Relational database
+- **JWT** - JSON Web Token authentication
+- **bcryptjs** - Password hashing
+- **Helmet** - Security middleware
+
+### Deployment
+- **Render** - Cloud hosting platform
+- **GitHub Actions** - CI/CD pipeline
+
+## 📦 Key Dependencies
+
+### Frontend Dependencies
+- **React 19** & **React DOM** - Latest React with improved concurrent features
+- **Redux Toolkit** - Modern Redux state management with RTK Query
+- **React Router DOM** - Declarative routing for React applications
+- **Tailwind CSS 4** - Next-generation utility-first CSS framework
+- **Vite 7** - Fast build tool with Hot Module Replacement (HMR)
+
+### Backend Dependencies
+- **Express.js** - Fast, unopinionated web framework for Node.js
+- **PostgreSQL (pg)** - PostgreSQL client for Node.js
+- **bcryptjs** - Password hashing library for secure authentication
+- **jsonwebtoken** - JWT implementation for secure token-based auth
+- **Helmet** - Security middleware for Express applications
+- **CORS** - Cross-Origin Resource Sharing middleware
+
+### Development & Testing
+- **Vitest** - Fast unit test framework for Vite projects
+- **ESLint** - Code linting and style enforcement
+- **Testing Library** - Simple and complete testing utilities
+- **Jest** - Backend testing framework with mocking capabilities
 
 
-## Wireframes
+## 🎨 Screenshots
 
-
-Below are wireframes showcasing the main design blueprints for the Job Application Tracker application:
+Below are screenshots showcasing the main features of the Job Tracker application:
 
 ### Landing Page
-![Landing Page](./assets/landing-page.png)
+![Landing Page](./assets/3.%20Landing%20Page.png)
 
 ### Login Page
-![Login Page](./assets/login.png)
+![Login Page](./assets/1.%20Login.png)
 
 ### Sign Up Page
-![Sign Up Page](./assets/sign-up.png)
+![Sign Up Page](./assets/2.%20Sign%20in.png)
 
-### Dashboard (Column view)
-![Dashboard](./assets/dashboard-column.png)
+### Dashboard (Column View)
+![Dashboard Column](./assets/4.%20Main%20Page%20(Column).png)
 
-### Dashboard (Grid view)
-![Application Cards](./assets/dashboard-grid.png)
+### Dashboard (Grid View)
+![Dashboard Grid](./assets/5.%20Main%20Page%20(Grid).png)
 
-### Add New Application Modal
-![Add New Application](./assets/add-application-modal.png)
-
----
-These wireframes illustrate the user flow and core UI components, including authentication, application management, and dashboard features. They serve as a visual reference for the application's look and feel.
-Job Seekers
-
-## Anything Unique
-Currently, there are no unique features beyond the core MVP.
+### Add/Edit Application Modal
+![Add Application Modal](./assets/6.%20Add,%20Edit%20modal.png)
 
 ---
-## Getting Started
+
+## 🚀 Future Enhancements
+
+- **Kanban Board View**: Drag-and-drop interface for status management
+- **Advanced Analytics**: Charts and insights on application success rates
+- **Document Management**: Upload and attach resumes, cover letters
+- **Interview Scheduling**: Calendar integration for interview tracking
+- **Follow-up Reminders**: Automated reminders for follow-ups
+- **Company Research**: Integration with company data APIs
+- **Mobile App**: React Native mobile application
+
+## 🏃‍♂️ Getting Started
 
 ### Prerequisites
-- Node.js & npm
-- PostgreSQL
+- **Node.js** (v18 or higher)
+- **npm** (v8 or higher)
+- **PostgreSQL** (v12 or higher)
 
-### Installation
-1. Clone the repository:
-	```bash
-	git clone https://github.com/EmilioPG13/Codecademy.git
-	```
-2. Install dependencies for both frontend and backend:
-	```bash
-	npm install
-	cd server && npm install
-	```
-3. Set up your PostgreSQL database and configure connection in `server/config/database.js`.
-4. Run database migrations and seeds as needed.
+### Local Development Setup
 
-### Running the Application
-1. Start the backend server:
-	```bash
-	cd server
-	npm start
-	```
-2. Start the frontend:
-	```bash
-	npm run dev
-	```
-3. Open your browser at `http://localhost:5173` (or the port shown in the terminal).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/EmilioPG13/Job-Tracker.git
+   cd Job-Tracker
+   ```
+
+2. **Install dependencies**
+   ```bash
+   # Install frontend dependencies
+   npm install
+   
+   # Install backend dependencies
+   cd server
+   npm install
+   cd ..
+   ```
+
+3. **Database Setup**
+   ```bash
+   # Create PostgreSQL database
+   createdb job_tracker
+   
+   # Configure database connection in server/.env
+   DATABASE_URL=postgresql://username:password@localhost:5432/job_tracker
+   JWT_SECRET=your-secret-key
+   FRONTEND_URL=http://localhost:5173
+   ```
+
+4. **Run the application**
+   ```bash
+   # Terminal 1: Start backend server
+   cd server
+   npm start
+   
+   # Terminal 2: Start frontend development server
+   npm run dev
+   ```
+
+5. **Access the application**
+   - Frontend: http://localhost:5173
+   - Backend API: http://localhost:3000
+
+### Testing
+
+```bash
+# Frontend tests
+npm test
+
+# Backend tests
+cd server
+npm test
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+## 🚀 Deployment
+
+This application is deployed on [Render](https://render.com) with:
+- **Frontend**: Static Site deployment
+- **Backend**: Web Service deployment
+- **Database**: PostgreSQL managed database
+
+### Environment Variables
+```env
+# Backend (.env)
+DATABASE_URL=your-postgresql-connection-string
+JWT_SECRET=your-jwt-secret
+FRONTEND_URL=https://your-frontend-url.com
+
+# Frontend (Render environment)
+VITE_API_URL=https://your-backend-url.com
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Emilio Peña Govea**
+- GitHub: [@EmilioPG13](https://github.com/EmilioPG13)
+- LinkedIn: [Your LinkedIn Profile]
 
 ---
-## Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-This project is licensed under the MIT License.
+**⭐ Star this repository if you found it helpful!**
