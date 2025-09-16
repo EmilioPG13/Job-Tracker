@@ -13,11 +13,7 @@
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "test:watch": "vitest --watch",
-    "postinstall": "npm i --no-save @rollup/rollup-linux-x64-gnu@4.24.0 || true"
-  },
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.24.0"
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
@@ -30,6 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
+    "@rollup/rollup-linux-x64-gnu": "4.24.0",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
