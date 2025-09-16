@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SocialButton from './SocialButton';
+import Socialbutton from './Socialbutton';
 import hideIcon from '../../assets/icons/hide.svg';
 import { useNavigate } from 'react-router-dom';
 
